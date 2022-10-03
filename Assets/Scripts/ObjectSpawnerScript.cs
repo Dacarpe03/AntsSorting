@@ -30,9 +30,19 @@ public class ObjectSpawnerScript : MonoBehaviour
     }
 
     private void InstantiateObjects(GameObject objectToInstantiate, int nTimes){
-        for (int i=0; i<nSquares; i++){
+        for (int i=0; i<nTimes; i++){
             Vector2 position = new Vector2(Random.Range(xLowLimit, xUpperLimit), Random.Range(yLowLimit, yUpperLimit));
             Instantiate(objectToInstantiate, position, Quaternion.identity);
+        }
+    }
+
+    public void DropObject(int objType, Vector3 position){
+        if (objType==1){
+            Instantiate(square, position, Quaternion.identity);
+        }else if (objType==2){
+            Instantiate(circle, position, Quaternion.identity);
+        }else if (objType==3){
+            Instantiate(diamond, position, Quaternion.identity);
         }
     }
 }

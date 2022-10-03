@@ -154,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   stepSeconds: 5
+  c_drop: 0.1
   c_pickup: 0.6
 --- !u!58 &4559562507890091447
 CircleCollider2D:
