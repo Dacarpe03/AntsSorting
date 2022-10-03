@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nSquares: 50
   nCircles: 70
-  nDiamonds: 30
+  nDiamonds: 100
   xUpperLimit: 50
   yUpperLimit: 50
   xLowLimit: -50

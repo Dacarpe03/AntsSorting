@@ -9,8 +9,4 @@ public class ObjectScript : MonoBehaviour
     public int GetObjectType(){
         return this.objectType;
     }
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("HOla");
-    }
 }   
