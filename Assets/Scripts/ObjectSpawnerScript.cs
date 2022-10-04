@@ -23,6 +23,8 @@ public class ObjectSpawnerScript : MonoBehaviour
     [SerializeField] GameObject ant;
 
     private void Start() {
+        
+        Time.timeScale = 5f;
         InstantiateObjects(square, nSquares);
         InstantiateObjects(circle, nCircles);
         InstantiateObjects(diamond, nDiamonds);

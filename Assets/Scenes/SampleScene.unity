@@ -178,14 +178,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ant
       objectReference: {fileID: 0}
-    - target: {fileID: 4559562507890091446, guid: d3c61200e492de347aa10a0e19562fcc, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559562507890091446, guid: d3c61200e492de347aa10a0e19562fcc, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c61200e492de347aa10a0e19562fcc, type: 3}
 --- !u!1 &519420028
@@ -284,8 +276,40 @@ PrefabInstance:
       value: ObjectSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: ant
+      value: 
+      objectReference: {fileID: 4559562507890091435, guid: d3c61200e492de347aa10a0e19562fcc, type: 3}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: nAnts
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: nCircles
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: nSquares
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
       propertyPath: nDiamonds
-      value: 100
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: xLowLimit
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: yLowLimit
+      value: -75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: xUpperLimit
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693811032576213070, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
+      propertyPath: yUpperLimit
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3351480709490377643, guid: 2fc9f3839ecb03e49b95191bfeda1112, type: 3}
       propertyPath: m_RootOrder

@@ -29,17 +29,23 @@ public class AntScript : MonoBehaviour
 
 
     private void Start(){
-        Time.timeScale = 3f;
         myBody = GetComponent<Rigidbody2D>();
         Step();
     }
 
     private void Step(){
+        CheckPosition();
         ChangeDirection();
         UpdateMemory();
         TryPick();
         TryDrop();
         StartCoroutine(NextStep());
+    }
+
+    private void CheckPosition(){
+        if (Vector2.Distance(myBody.position, new Vector2(0f, 0f)) > 200){
+            myBody.position = new Vector2(0f, 0f);
+        }
     }
 
     private void ChangeDirection(){
@@ -63,7 +69,7 @@ public class AntScript : MonoBehaviour
                 Destroy(lastObject);
                 carrying = true;
                 carryingObject = encounteredObject;
-                Debug.Log("Destroying");
+                Debug.Log("Pick");
             }
         }
     }
